@@ -47,8 +47,8 @@ class LoginVC: UIViewController {
                 
                 let mainStoryBoard = UIStoryboard(name: "ProfileVC", bundle: nil)
                 let vc:ProfileVC = (mainStoryBoard.instantiateViewController(withIdentifier: "ProfileVC") as? ProfileVC)!
-//                self.navigationController!.pushViewController(vc,animated:true)
-                self.present(vc, animated: true, completion: nil)
+                self.navigationController!.pushViewController(vc,animated:true)
+//                self.present(vc, animated: true, completion: nil)
                 print("Login Successfully")
                 message = true
                 break

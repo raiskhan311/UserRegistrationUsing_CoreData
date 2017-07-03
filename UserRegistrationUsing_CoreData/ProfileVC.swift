@@ -35,9 +35,9 @@ class ProfileVC: UIViewController {
 
 
     @IBAction func btn_Logout(_ sender: Any) {
-        self.dismiss(animated: true, completion: nil)
-//        self.navigationController?.popViewController(animated: true)
-//        self.navigationController?.popToRootViewController(animated: true)
+//        self.dismiss(animated: true, completion: nil)
+        _ = navigationController?.popViewController(animated: true)
+//        _ = navigationController?.popToRootViewController(animated: true)
     }
     
 }

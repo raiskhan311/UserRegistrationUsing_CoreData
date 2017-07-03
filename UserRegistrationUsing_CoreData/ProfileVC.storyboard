@@ -46,27 +46,19 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6ax-ez-39J">
-                                <rect key="frame" x="311" y="72" width="48" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="backgroundColor" red="0.0" green="0.0" blue="1" alpha="1" colorSpace="calibratedRGB"/>
-                                <fontDescription key="fontDescription" type="boldSystem" pointSize="13"/>
-                                <color key="tintColor" red="0.95678943400000005" green="0.95690399410000004" blue="0.95675045250000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                <state key="normal" title="Logout">
-                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                </state>
-                                <connections>
-                                    <action selector="btn_Logout:" destination="YXn-51-r1B" eventType="touchUpInside" id="wBh-bK-0eF"/>
-                                </connections>
-                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
                     <toolbarItems/>
-                    <navigationItem key="navigationItem" title="Profile Page" id="ozw-JP-gVV"/>
+                    <navigationItem key="navigationItem" title="Profile Page" id="ozw-JP-gVV">
+                        <barButtonItem key="rightBarButtonItem" systemItem="action" id="Ax0-pm-3dw">
+                            <connections>
+                                <action selector="btn_Logout:" destination="YXn-51-r1B" id="UOl-Ih-qud"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
                     <nil key="simulatedBottomBarMetrics"/>
                     <connections>
-                        <outlet property="btn_Logout" destination="6ax-ez-39J" id="ujX-gO-AYv"/>
                         <outlet property="img_profile" destination="NgI-cx-PTV" id="7US-Gi-I6l"/>
                         <outlet property="lbl_email" destination="3yU-x3-yzF" id="4NO-8i-NU7"/>
                         <outlet property="lbl_mobile" destination="Txh-lN-HFM" id="rBY-rm-1jf"/>
