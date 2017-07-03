@@ -7,23 +7,31 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1878F95A1F090A020070DCA9 /* ProfileVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1878F9591F090A020070DCA9 /* ProfileVC.swift */; };
+		1878F95C1F090DB40070DCA9 /* ProfileVC.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1878F95B1F090DB40070DCA9 /* ProfileVC.storyboard */; };
 		18CC5B441F07DAEA00C614E7 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18CC5B431F07DAEA00C614E7 /* AppDelegate.swift */; };
-		18CC5B461F07DAEA00C614E7 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18CC5B451F07DAEA00C614E7 /* ViewController.swift */; };
+		18CC5B461F07DAEA00C614E7 /* RegistrationVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18CC5B451F07DAEA00C614E7 /* RegistrationVC.swift */; };
 		18CC5B491F07DAEA00C614E7 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 18CC5B471F07DAEA00C614E7 /* Main.storyboard */; };
 		18CC5B4C1F07DAEA00C614E7 /* UserRegistrationUsing_CoreData.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 18CC5B4A1F07DAEA00C614E7 /* UserRegistrationUsing_CoreData.xcdatamodeld */; };
 		18CC5B4E1F07DAEA00C614E7 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 18CC5B4D1F07DAEA00C614E7 /* Assets.xcassets */; };
 		18CC5B511F07DAEA00C614E7 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 18CC5B4F1F07DAEA00C614E7 /* LaunchScreen.storyboard */; };
+		18CC5B591F07DBA200C614E7 /* CoreDataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18CC5B581F07DBA200C614E7 /* CoreDataManager.swift */; };
+		18CC5B5B1F0812D500C614E7 /* LoginVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18CC5B5A1F0812D500C614E7 /* LoginVC.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		1878F9591F090A020070DCA9 /* ProfileVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProfileVC.swift; sourceTree = "<group>"; };
+		1878F95B1F090DB40070DCA9 /* ProfileVC.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = ProfileVC.storyboard; sourceTree = "<group>"; };
 		18CC5B401F07DAEA00C614E7 /* UserRegistrationUsing_CoreData.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = UserRegistrationUsing_CoreData.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		18CC5B431F07DAEA00C614E7 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		18CC5B451F07DAEA00C614E7 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		18CC5B451F07DAEA00C614E7 /* RegistrationVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegistrationVC.swift; sourceTree = "<group>"; };
 		18CC5B481F07DAEA00C614E7 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		18CC5B4B1F07DAEA00C614E7 /* UserRegistrationUsing_CoreData.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = UserRegistrationUsing_CoreData.xcdatamodel; sourceTree = "<group>"; };
 		18CC5B4D1F07DAEA00C614E7 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		18CC5B501F07DAEA00C614E7 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		18CC5B521F07DAEB00C614E7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		18CC5B581F07DBA200C614E7 /* CoreDataManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CoreDataManager.swift; sourceTree = "<group>"; };
+		18CC5B5A1F0812D500C614E7 /* LoginVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginVC.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -57,12 +65,16 @@
 			isa = PBXGroup;
 			children = (
 				18CC5B431F07DAEA00C614E7 /* AppDelegate.swift */,
-				18CC5B451F07DAEA00C614E7 /* ViewController.swift */,
 				18CC5B471F07DAEA00C614E7 /* Main.storyboard */,
+				18CC5B451F07DAEA00C614E7 /* RegistrationVC.swift */,
+				18CC5B5A1F0812D500C614E7 /* LoginVC.swift */,
+				1878F95B1F090DB40070DCA9 /* ProfileVC.storyboard */,
+				1878F9591F090A020070DCA9 /* ProfileVC.swift */,
 				18CC5B4D1F07DAEA00C614E7 /* Assets.xcassets */,
 				18CC5B4F1F07DAEA00C614E7 /* LaunchScreen.storyboard */,
 				18CC5B521F07DAEB00C614E7 /* Info.plist */,
 				18CC5B4A1F07DAEA00C614E7 /* UserRegistrationUsing_CoreData.xcdatamodeld */,
+				18CC5B581F07DBA200C614E7 /* CoreDataManager.swift */,
 			);
 			path = UserRegistrationUsing_CoreData;
 			sourceTree = "<group>";
@@ -127,6 +139,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				18CC5B511F07DAEA00C614E7 /* LaunchScreen.storyboard in Resources */,
+				1878F95C1F090DB40070DCA9 /* ProfileVC.storyboard in Resources */,
 				18CC5B4E1F07DAEA00C614E7 /* Assets.xcassets in Resources */,
 				18CC5B491F07DAEA00C614E7 /* Main.storyboard in Resources */,
 			);
@@ -139,9 +152,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				18CC5B461F07DAEA00C614E7 /* ViewController.swift in Sources */,
+				18CC5B461F07DAEA00C614E7 /* RegistrationVC.swift in Sources */,
 				18CC5B441F07DAEA00C614E7 /* AppDelegate.swift in Sources */,
+				1878F95A1F090A020070DCA9 /* ProfileVC.swift in Sources */,
+				18CC5B591F07DBA200C614E7 /* CoreDataManager.swift in Sources */,
 				18CC5B4C1F07DAEA00C614E7 /* UserRegistrationUsing_CoreData.xcdatamodeld in Sources */,
+				18CC5B5B1F0812D500C614E7 /* LoginVC.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -303,6 +319,7 @@
 				18CC5B571F07DAEB00C614E7 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 
