@@ -45,6 +45,45 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		1832A3151F0AB5FA00B71401 /* ProfileVC */ = {
+			isa = PBXGroup;
+			children = (
+				1878F95B1F090DB40070DCA9 /* ProfileVC.storyboard */,
+				1878F9591F090A020070DCA9 /* ProfileVC.swift */,
+			);
+			name = ProfileVC;
+			sourceTree = "<group>";
+		};
+		1832A3161F0AB64F00B71401 /* CoreData */ = {
+			isa = PBXGroup;
+			children = (
+				18CC5B4A1F07DAEA00C614E7 /* UserRegistrationUsing_CoreData.xcdatamodeld */,
+				18CC5B581F07DBA200C614E7 /* CoreDataManager.swift */,
+			);
+			name = CoreData;
+			sourceTree = "<group>";
+		};
+		1832A3171F0AB67E00B71401 /* RegistrationAndLoginVC */ = {
+			isa = PBXGroup;
+			children = (
+				18CC5B471F07DAEA00C614E7 /* Main.storyboard */,
+				18CC5B451F07DAEA00C614E7 /* RegistrationVC.swift */,
+				18CC5B5A1F0812D500C614E7 /* LoginVC.swift */,
+			);
+			name = RegistrationAndLoginVC;
+			sourceTree = "<group>";
+		};
+		1832A3181F0AB6A000B71401 /* Supporting */ = {
+			isa = PBXGroup;
+			children = (
+				18CC5B4D1F07DAEA00C614E7 /* Assets.xcassets */,
+				18CC5B431F07DAEA00C614E7 /* AppDelegate.swift */,
+				18CC5B4F1F07DAEA00C614E7 /* LaunchScreen.storyboard */,
+				18CC5B521F07DAEB00C614E7 /* Info.plist */,
+			);
+			name = Supporting;
+			sourceTree = "<group>";
+		};
 		18CC5B371F07DAEA00C614E7 = {
 			isa = PBXGroup;
 			children = (
@@ -64,17 +103,10 @@
 		18CC5B421F07DAEA00C614E7 /* UserRegistrationUsing_CoreData */ = {
 			isa = PBXGroup;
 			children = (
-				18CC5B431F07DAEA00C614E7 /* AppDelegate.swift */,
-				18CC5B471F07DAEA00C614E7 /* Main.storyboard */,
-				18CC5B451F07DAEA00C614E7 /* RegistrationVC.swift */,
-				18CC5B5A1F0812D500C614E7 /* LoginVC.swift */,
-				1878F95B1F090DB40070DCA9 /* ProfileVC.storyboard */,
-				1878F9591F090A020070DCA9 /* ProfileVC.swift */,
-				18CC5B4D1F07DAEA00C614E7 /* Assets.xcassets */,
-				18CC5B4F1F07DAEA00C614E7 /* LaunchScreen.storyboard */,
-				18CC5B521F07DAEB00C614E7 /* Info.plist */,
-				18CC5B4A1F07DAEA00C614E7 /* UserRegistrationUsing_CoreData.xcdatamodeld */,
-				18CC5B581F07DBA200C614E7 /* CoreDataManager.swift */,
+				1832A3161F0AB64F00B71401 /* CoreData */,
+				1832A3181F0AB6A000B71401 /* Supporting */,
+				1832A3171F0AB67E00B71401 /* RegistrationAndLoginVC */,
+				1832A3151F0AB5FA00B71401 /* ProfileVC */,
 			);
 			path = UserRegistrationUsing_CoreData;
 			sourceTree = "<group>";
