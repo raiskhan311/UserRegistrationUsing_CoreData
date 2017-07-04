@@ -30,11 +30,11 @@ class RegistrationVC: UIViewController {
         // Do any additional setup after loading the view, typically from a nib.
     }
 
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
-    }
+    
+    //MARK:- Action of Button
+    
     @IBAction func btn_register(_ sender: UIButton) {
+        //calling function 
         CoreDataManager.SaveData_into_CoreData(firstname: txt_firstname.text!, lastname: txt_lastname.text!, email: txt_email.text!,mobile: txt_mobile.text!, country: txt_country.text!, password: txt_password.text!)
     }
 }

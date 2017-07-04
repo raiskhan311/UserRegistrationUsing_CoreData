@@ -52,6 +52,22 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="country label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="RXM-Uf-vma">
+                                <rect key="frame" x="16" y="326" width="343" height="25"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="Baskerville" family="Baskerville" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3VM-Mw-uh6">
+                                <rect key="frame" x="328" y="70" width="33" height="34"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="Baskerville" family="Baskerville" pointSize="19"/>
+                                <state key="normal" title="Edit"/>
+                                <connections>
+                                    <segue destination="JX9-Jg-WKY" kind="show" id="nas-io-dPC"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
@@ -66,6 +82,7 @@
                     <nil key="simulatedBottomBarMetrics"/>
                     <connections>
                         <outlet property="img_profile" destination="NgI-cx-PTV" id="7US-Gi-I6l"/>
+                        <outlet property="lbl_countryName" destination="RXM-Uf-vma" id="6mt-3n-ulI"/>
                         <outlet property="lbl_email" destination="3yU-x3-yzF" id="4NO-8i-NU7"/>
                         <outlet property="lbl_mobile" destination="Txh-lN-HFM" id="rBY-rm-1jf"/>
                         <outlet property="lbl_name" destination="bXq-im-saO" id="QWM-u2-Jjt"/>
@@ -74,6 +91,67 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="LdI-lm-M0s" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="5145" y="-155"/>
+        </scene>
+        <!--Edit Profile-->
+        <scene sceneID="7FG-Tq-Ed4">
+            <objects>
+                <viewController storyboardIdentifier="EditProfileVC" useStoryboardIdentifierAsRestorationIdentifier="YES" id="JX9-Jg-WKY" customClass="EditProfileVC" customModule="UserRegistrationUsing_CoreData" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="VAi-Z0-dOn"/>
+                        <viewControllerLayoutGuide type="bottom" id="420-q5-CmO"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="xoc-LP-7vj">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="QZY-ye-hNU">
+                                <rect key="frame" x="16" y="127" width="343" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" name="Baskerville" family="Baskerville" pointSize="19"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="F7s-P5-09d">
+                                <rect key="frame" x="16" y="179" width="343" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" name="Baskerville" family="Baskerville" pointSize="19"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Gtl-9J-TeA">
+                                <rect key="frame" x="16" y="239" width="343" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" name="Baskerville" family="Baskerville" pointSize="19"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="L93-3V-33O">
+                                <rect key="frame" x="16" y="303" width="343" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" name="Baskerville" family="Baskerville" pointSize="19"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="Edit Profile" id="Ln6-Bg-mJC">
+                        <barButtonItem key="rightBarButtonItem" systemItem="done" id="Kce-5z-wFF">
+                            <connections>
+                                <action selector="btn_EditProfileDone:" destination="JX9-Jg-WKY" id="ZrY-ve-3lQ"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                    <connections>
+                        <outlet property="txt_userCountryName" destination="L93-3V-33O" id="ZA8-qX-6YK"/>
+                        <outlet property="txt_userEmail" destination="Gtl-9J-TeA" id="NhF-vq-hpa"/>
+                        <outlet property="txt_userMobileNumber" destination="F7s-P5-09d" id="pzO-cb-n9n"/>
+                        <outlet property="txt_userName" destination="QZY-ye-hNU" id="ZuZ-pw-1k5"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="sKE-Wa-zj0" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="5917.6000000000004" y="-155.17241379310346"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="VKF-fj-8Cb">

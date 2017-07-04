@@ -16,6 +16,8 @@ class CoreDataManager: NSObject {
         return appDelegate.persistentContainer.viewContext
     }
     
+    //MARK:- Creat function for Save Data into CoreData
+    
     class func SaveData_into_CoreData(firstname:String,lastname:String,email:String,mobile:String,country:String,password:String)
     {
         let context = getContext()
@@ -40,6 +42,9 @@ class CoreDataManager: NSObject {
         }
     }
     
+    
+    //MARK : - Creat function for Fetch Data from CoreData
+    
     class func fetchData_from_CoreData() -> [userItem]
     {
         var array = [userItem]()
@@ -61,6 +66,13 @@ class CoreDataManager: NSObject {
             print("some erro accur while fetching data")
         }
         return array
+    }
+    
+    class func updateData_into_CoreData(){
+        let getdata = NSBatchUpdateRequest(entityName: "UserEntity")
+        print(getdata)
+        let request = NSFetchRequest<NSFetchRequestResult>(entityName: "UserEntity")
+        request.predicate = NSPredicate(format:"firstname = %@","Raish")
     }
 
 }

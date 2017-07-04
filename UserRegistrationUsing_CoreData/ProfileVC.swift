@@ -10,7 +10,6 @@ import UIKit
 
 class ProfileVC: UIViewController {
     
-    
     @IBOutlet weak var img_profile: UIImageView!
 
     @IBOutlet weak var lbl_name: UILabel!
@@ -18,6 +17,8 @@ class ProfileVC: UIViewController {
     @IBOutlet weak var lbl_mobile: UILabel!
     
     @IBOutlet weak var lbl_email: UILabel!
+    
+    @IBOutlet weak var lbl_countryName: UILabel!
     
     fileprivate var LoginUserDetailsArray = [userItem]()
     
@@ -46,9 +47,7 @@ class ProfileVC: UIViewController {
 //        _ = navigationController?.popToRootViewController(animated: true)
     }
     
-    
-    
-    //Mark:- fetch data from CoreData
+    //MARK:- fetch data from CoreData
     func fetchData() {
         LoginUserDetailsArray = CoreDataManager.fetchData_from_CoreData()
         for item in 0..<LoginUserDetailsArray.count{
@@ -56,6 +55,7 @@ class ProfileVC: UIViewController {
             if entity.email == userloginEmail!{
                 lbl_name.text = String(entity.firstname+" "+entity.lastname)
                 lbl_mobile.text = entity.mobile
+                lbl_countryName.text = entity.country
             }
         }
     }

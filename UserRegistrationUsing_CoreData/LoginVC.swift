@@ -36,7 +36,7 @@ class LoginVC: UIViewController {
         // Dispose of any resources that can be recreated.
     }
     
-    //Mark: - Action button
+    //MARK: - Action button
     @IBAction func btn_login(_ sender: UIButton) {
         for index in 0..<regemail.count{
             let (email,pass) = (regemail[index],regpassword[index])
@@ -64,7 +64,7 @@ class LoginVC: UIViewController {
     }
     
     
-    //Mark:- fetch data from CoreData
+    //MARK:- fetch data from CoreData
     func fetchData() {
         UserDetailsArray = CoreDataManager.fetchData_from_CoreData()
         for item in 0..<UserDetailsArray.count{
