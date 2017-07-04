@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		04EB632A1F0B94D400BDB641 /* UserEmail.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04EB63291F0B94D400BDB641 /* UserEmail.swift */; };
 		1878F95A1F090A020070DCA9 /* ProfileVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1878F9591F090A020070DCA9 /* ProfileVC.swift */; };
 		1878F95C1F090DB40070DCA9 /* ProfileVC.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1878F95B1F090DB40070DCA9 /* ProfileVC.storyboard */; };
 		18CC5B441F07DAEA00C614E7 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18CC5B431F07DAEA00C614E7 /* AppDelegate.swift */; };
@@ -20,6 +21,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		04EB63291F0B94D400BDB641 /* UserEmail.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UserEmail.swift; sourceTree = "<group>"; };
 		1878F9591F090A020070DCA9 /* ProfileVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProfileVC.swift; sourceTree = "<group>"; };
 		1878F95B1F090DB40070DCA9 /* ProfileVC.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = ProfileVC.storyboard; sourceTree = "<group>"; };
 		18CC5B401F07DAEA00C614E7 /* UserRegistrationUsing_CoreData.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = UserRegistrationUsing_CoreData.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -45,6 +47,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		04EB63281F0B949500BDB641 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				04EB63291F0B94D400BDB641 /* UserEmail.swift */,
+			);
+			name = Model;
+			sourceTree = "<group>";
+		};
 		1832A3151F0AB5FA00B71401 /* ProfileVC */ = {
 			isa = PBXGroup;
 			children = (
@@ -103,6 +113,7 @@
 		18CC5B421F07DAEA00C614E7 /* UserRegistrationUsing_CoreData */ = {
 			isa = PBXGroup;
 			children = (
+				04EB63281F0B949500BDB641 /* Model */,
 				1832A3161F0AB64F00B71401 /* CoreData */,
 				1832A3181F0AB6A000B71401 /* Supporting */,
 				1832A3171F0AB67E00B71401 /* RegistrationAndLoginVC */,
@@ -190,6 +201,7 @@
 				18CC5B591F07DBA200C614E7 /* CoreDataManager.swift in Sources */,
 				18CC5B4C1F07DAEA00C614E7 /* UserRegistrationUsing_CoreData.xcdatamodeld in Sources */,
 				18CC5B5B1F0812D500C614E7 /* LoginVC.swift in Sources */,
+				04EB632A1F0B94D400BDB641 /* UserEmail.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

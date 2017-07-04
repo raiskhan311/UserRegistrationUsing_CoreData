@@ -19,13 +19,19 @@ class ProfileVC: UIViewController {
     
     @IBOutlet weak var lbl_email: UILabel!
     
-    @IBOutlet weak var btn_Logout: UIButton!
+    fileprivate var LoginUserDetailsArray = [userItem]()
+    
+    var namrString: String?
+    var emailString: String?
+    var mobilenumberString:String?
     
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
         self.navigationItem.hidesBackButton = true
         self.navigationController?.navigationBar.isHidden = false
+        lbl_email.text! = userloginEmail!
+        fetchData()
     }
 
     override func didReceiveMemoryWarning() {
@@ -40,4 +46,17 @@ class ProfileVC: UIViewController {
 //        _ = navigationController?.popToRootViewController(animated: true)
     }
     
+    
+    
+    //Mark:- fetch data from CoreData
+    func fetchData() {
+        LoginUserDetailsArray = CoreDataManager.fetchData_from_CoreData()
+        for item in 0..<LoginUserDetailsArray.count{
+            let entity = LoginUserDetailsArray[item]
+            if entity.email == userloginEmail!{
+                lbl_name.text = String(entity.firstname+" "+entity.lastname)
+                lbl_mobile.text = entity.mobile
+            }
+        }
+    }
 }

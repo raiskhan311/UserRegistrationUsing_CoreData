@@ -8,6 +8,8 @@
 
 import UIKit
 
+
+var userloginEmail:String?
 class LoginVC: UIViewController {
     
     @IBOutlet weak var txt_email: UITextField!
@@ -20,11 +22,6 @@ class LoginVC: UIViewController {
 
     var regemail = [String]()
     var regpassword = [String]()
-    var regfirstname = String()
-    var reglastname = String()
-    var regmobile = String()
-    var regcountry = String()
-   
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -44,11 +41,11 @@ class LoginVC: UIViewController {
         for index in 0..<regemail.count{
             let (email,pass) = (regemail[index],regpassword[index])
             if txt_email.text! == email && txt_password.text! == pass{
-                
                 let mainStoryBoard = UIStoryboard(name: "ProfileVC", bundle: nil)
                 let vc:ProfileVC = (mainStoryBoard.instantiateViewController(withIdentifier: "ProfileVC") as? ProfileVC)!
                 self.navigationController!.pushViewController(vc,animated:true)
 //                self.present(vc, animated: true, completion: nil)
+                userloginEmail = email
                 print("Login Successfully")
                 message = true
                 break
